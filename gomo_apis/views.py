@@ -15,6 +15,7 @@ class LoginViewSet(viewsets.ModelViewSet):
     serializer_class=LoginSerializer
 
 class RegistrationViewSet(viewsets.ModelViewSet):
+    permission_classes=(IsAuthenticated,)
     queryset=Registration.objects.all()
     serializer_class=RegisterationSerializer
 

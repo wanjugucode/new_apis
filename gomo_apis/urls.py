@@ -1,8 +1,6 @@
 from django.db import router
 from django.urls.conf import include, path
-from gomo_apis.serializer import LoginSerializer
 from rest_framework import routers
-# from rest_framework.viewset import ModelViewset
 from .views import LoginViewSet
 from .views import RegistrationViewSet
 from .views import DashBoardBillListViewSet
