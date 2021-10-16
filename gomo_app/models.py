@@ -17,7 +17,7 @@ class Registration(models.Model):
 class DashBoardBill(models.Model):
     bill_id=models.IntegerField()
     bill_name=models.CharField(max_length=25)
-    bill_icon_image=models.ImageField(null=True)
+    bill_icon_image=models.ImageField()
 
 class UploadBillPhoto(models.Model):
     bill_photo=models.ImageField(null=True)
