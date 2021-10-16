@@ -15,7 +15,7 @@ class Registration(models.Model):
     password=models.CharField(max_length=16)
 
 class DashBoardBillList(models.Model):
-    id_number=models.CharField(max_length=16)
+    bill_id=models.CharField(max_length=16)
     bill_name=models.CharField(max_length=25)
     bill_icon_image=models.ImageField(null=True)
 
