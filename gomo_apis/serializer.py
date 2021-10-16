@@ -11,18 +11,22 @@ class LoginSerializer(serializers.ModelSerializer):
     class Meta:
         model=Login
         fields=("email","password")
+
 class RegisterationSerializer(serializers.ModelSerializer):
     class Meta:
         model=Registration
         fields=("first_name","last_name","phone_number","email","password")
+
 class UploadBillPhotoSerializer(serializers.ModelSerializer):
     class Meta:
         model=UploadBillPhoto
         fields=("bill_photo",)
+
 class DashBoardBillSerializer(serializers.ModelSerializer):
     class Meta:
         model=DashBoardBill
         fields=("bill_id","bill_name","bill_icon_image")
+
 
 class BillDetailSerializer(serializers.ModelSerializer):
     class Meta:
