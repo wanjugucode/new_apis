@@ -30,6 +30,6 @@ class BillDetails(models.Model):
     available_payment_method_details=models.CharField(max_length=30)
     
 class PaymentConfirmationDetails(models.Model):
-    name=models.CharField(max_length=17)
+    payment_confirmation_details=models.TextField()
 
 
