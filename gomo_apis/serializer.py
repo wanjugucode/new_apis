@@ -1,7 +1,7 @@
 from gomo_app.models import Login
 from gomo_app.models import Registration
 from gomo_app.models import UploadBillPhoto
-from gomo_app.models import DashBoardBillList
+from gomo_app.models import DashBoardBill
 from gomo_app.models import PaymentConfirmationDetails
 from gomo_app.models import BillDetails
 from rest_framework import serializers
@@ -19,10 +19,10 @@ class UploadBillPhotoSerializer(serializers.ModelSerializer):
     class Meta:
         model=UploadBillPhoto
         fields=("bill_photo",)
-class DashBoardBillListSerializer(serializers.ModelSerializer):
+class DashBoardBillSerializer(serializers.ModelSerializer):
     class Meta:
-        model=DashBoardBillList
-        fields=(" bill_id","bill_name","bill_icon_image")
+        model=DashBoardBill
+        fields=("bill_id","bill_name","bill_icon_image")
 
 class BillDetailSerializer(serializers.ModelSerializer):
     class Meta:
