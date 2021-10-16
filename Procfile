@@ -1,0 +1,1 @@
+web: gunicorn gomo_project.wsgi --log-file -
